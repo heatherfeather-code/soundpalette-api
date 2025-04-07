@@ -1,0 +1,31 @@
+extends layout 
+block main-content
+    h2 select one music genre
+        //- button#ambient.filter Ambient 
+        //- button#classical.filter Classical
+        //- button#jazz.filter Jazz
+        //- button#pop.filter Pop
+        //- button#rock.filter Rock
+        //- button#hip-hop.filter Hip-Hop
+        //- button#country.filter Country
+        //- button#electronic.filter Electronic
+        //- button#lofi.filter Lofi
+        
+        //- Example of what I am trying to accomplish with the buttons.So maybe I am on the right track? 
+        div#genre-buttons.genre-links
+            a(href="/ambient")#ambient.filter Ambient 
+            a(href="/classical")#classical.filter Classical
+            a(href="/jazz")#jazz.filter Jazz
+            a(href="/pop")#pop.filter Pop 
+            a(href="/rock")#rock.filter Rock
+            a(href="/hiphop")#hip-hop.filter Hip-Hop
+            a(href="/country")#country.filter Country
+            a(href="/electronic")#electronic.filter Electronic
+            a(href="/lofi")#lofi.filter Lofi
+        
+
+            //- button#submit.filter Submit
+    
+        //- img(src="https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg")
+    
+    div#output

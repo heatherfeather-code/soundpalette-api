@@ -1,0 +1,15 @@
+extends layout
+block main-content
+
+    h2 #{artData.genre}
+    h2 Artwork Pairing
+    p #{artData.data.title}
+    p #{artData.data.artist_display}
+    img(src=imageURL)
+    p #{artData.data.description}
+
+    
+    h2 Song Pairing
+    p Artist: #{songData.artists[0].name}
+    p Song: #{songData.name}
+//-I want to display the genre from the selected button at the top. I cant have the comment above but I will figure this out
